@@ -11,8 +11,6 @@ management:
       port: 27017
       host: localhost
       username: root
-      password:
-        - 1234
 logging:
   config:
     classpath: logback-test.xml

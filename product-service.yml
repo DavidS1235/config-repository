@@ -1,0 +1,16 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  data:
+    mongodb:
+      database: db_products
+      port: 27017
+      host: localhost
+      username: root
+      password:
+        - 1234
+logging:
+  config:
+    classpath: logback-test.xml

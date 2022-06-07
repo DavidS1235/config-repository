@@ -1,0 +1,17 @@
+server:
+  port: 8006
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  data:
+    mongodb:
+      database: db_products
+      port: 27017
+      host: localhost
+      username: root
+logging:
+  config:
+    classpath: logback-test.xml

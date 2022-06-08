@@ -6,12 +6,18 @@ management:
       exposure:
         include: "*"
 spring:
+#  datasource:
+#    driver-class-name:org.MongoDriver.Driver
   data:
     mongodb:
+#      database: db_products
+#      port: 27017
+#      host: localhost
+#      username: root
+#      uri: mongodb://root:@localhost:27017/db_products
+      uri:mongodb://localhost:27017/
       database: db_products
-      port: 27017
-      host: localhost
-      username: root
+      
 logging:
   config:
     classpath: logback-test.xml

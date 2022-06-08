@@ -12,7 +12,8 @@ spring:
       port: 27017
       host: localhost
       username: root
-      uri: mongodb://localhost:27017/db_products
+      uri: mongodb://localhost:27017/db_products\
+      driverClassName:org.MongoDriver.Driver
 logging:
   config:
     classpath: logback-test.xml

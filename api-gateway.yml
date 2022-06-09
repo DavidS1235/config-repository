@@ -3,10 +3,15 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone:
+      defaultZone: http://localhost:8009/eureka/
 spring:
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
+      # routes:
+      #   - id: registry-service
+      #     uri: http://localhost:
+      #     predicates:
+      #       -Path=/registry/**

@@ -1,0 +1,12 @@
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      defaultZone:
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true

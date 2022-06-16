@@ -15,17 +15,17 @@ spring:
       uri: http://localhost:8010
       predicates:
         - Path=/api/client/**
-      filters:
-        - StripPrefix=2
+      #filters:
+      #  - StripPrefix=2
     - id: product-service
       uri: http://localhost:8005
       predicates:
         - Path=/api/product/**
-      filters:
-        - StripPrefix=2
+      #filters:
+      #  - StripPrefix=2
     - id: movement-service
       uri: http://localhost:8006
       predicates:
         - Path=/api/movement/**
-      filters:
-        - StripPrefix=2
+      #filters:
+      #  - StripPrefix=2

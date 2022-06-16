@@ -10,8 +10,22 @@ spring:
       discovery:
         locator:
           enabled: true
-      # routes:
-      #   - id: registry-service
-      #     uri: http://localhost:
-      #     predicates:
-      #       -Path=/registry/**
+    routes:
+    - id: client-service
+      uri: lb://client-service
+      predicates:
+        - Path=/api/client/**
+      filters:
+        - StripPrefix=2
+    - id: product-service
+      uri: lb://product-service
+      predicates:
+        - Path=/api/productos/**
+      filters:
+        - StripPrefix=2
+    - id: movement-service
+      uri: lb://movement-service
+      predicates:
+        - Path=/api/movement/**
+      filters:
+        - StripPrefix=2

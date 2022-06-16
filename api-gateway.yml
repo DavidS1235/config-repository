@@ -12,19 +12,19 @@ spring:
           enabled: true
     routes:
       - id: client-service
-        uri: http://localhost:8010
+        uri: http://localhost:8010/api/client
         predicates:
           - Path=/api/client/**
       #filters:
       #  - StripPrefix=2
       - id: product-service
-        uri: http://localhost:8005
+        uri: http://localhost:8005/api/product
         predicates:
           - Path=/api/product/**
       #filters:
       #  - StripPrefix=2
       - id: movement-service
-        uri: http://localhost:8006
+        uri: http://localhost:8006/api/movement
         predicates:
           - Path=/api/movement/**
       #filters:

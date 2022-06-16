@@ -16,6 +16,10 @@
 #     classpath: logback-test.xml
 server:
   port: 8005
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8009/eureka/
 management:
   endpoints:
     web:

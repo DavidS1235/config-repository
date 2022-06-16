@@ -1,5 +1,9 @@
 server:
   port: 8006
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8009/eureka/
 management:
   endpoints:
     web:
